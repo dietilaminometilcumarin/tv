@@ -1,10 +1,36 @@
 <style>
 img {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border:1px; width:800px; height:600px; position: absolute;top: 50%;left: 50%;-ms-transform: translate(-50%, -50%);transform: translate(-50%, -50%);
 }
 </style>
 
-<body>
-<img src="assets/poster1.jpg" style="size:100%; margin: 0;position: absolute;top: 50%;left: 50%;-ms-transform: translate(-50%, -50%);transform: translate(-50%, -50%);"/>
+<script type="text/javascript">
+ function imgStatus(im) 
+ {
+	alert(123);
+	im.src='assets/error.jpg';
+	
+ }
+  
+  
+  
+</script>
+
+
+
+
+<body style="background-color:#cccccc;" onLoad="">
+ICE TV
+
+<div style="">
+	
+	<a id="alink" href="#" onClick="window.location.href='https://stream.icetv.cf';">
+		<img src="https://stream.icetv.cf/assets/poster1.jpg" onError="imgStatus(this);" style="width:640px; height:360px;">
+	</a>
+
+</div>
+
 </body>
