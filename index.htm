@@ -7,30 +7,26 @@ img {
 }
 </style>
 
-<script type="text/javascript">
- function imgStatus(im) 
- {
-	//alert(123);
-	im.src='assets/error.jpg';
-	
- }
-  
-  
-  
-</script>
-
-
-
-
 <body style="background-color:#cccccc;" onLoad="">
 ICE TV
 
 <div style="">
 	
-	<a id="alink" href="#" onClick="window.location.href='https://stream.icetv.cf';">
-		<img src="https://stream.icetv.cf/assets/poster1.jpg" onError="imgStatus(this);" style="width:640px; height:360px;">
+	<a href="#" id="alink_">
+		<img id="img_" src="assets/load.gif" style="width:640px; height:360px;">
 	</a>
 
 </div>
+
+<script>
+	var img = new Image();
+	img.onload = function () {
+	   //alert("image is loaded");
+	   document.getElementById("img_").src = img.src;
+	   document.getElementById("alink_").href="https://stream.icetv.cf/";
+	}
+	img.src = "https://stream.icetv.cf/assets/poster1.jpg?_="+(new Date().getTime()); 	
+	
+</script>
 
 </body>
