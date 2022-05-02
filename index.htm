@@ -23,10 +23,12 @@ ICE TV
 <script>
 	var img = new Image();
 	img.onload = function () {
-	   //alert("image is loaded");
 	   document.getElementById("img_").src = img.src;
 	   document.getElementById("alink_").href="https://stream.icetv.cf/";
 	}
+	img.onerror = function () {
+	   document.getElementById("img_").src = "assets/stop.jpg";
+	}	
 	img.src = "https://stream.icetv.cf/assets/poster1.jpg?_="+(new Date().getTime()); 	
 	
 </script>
