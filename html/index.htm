@@ -124,16 +124,17 @@ body { font-weight: normal;}
 		})
 	</script>
 
-
+<script>
+	function doCounter(){
+		var img = new Image();
+		img.src = "http://m-tv.cf/?_="+(new Date().getTime()); }
+</script>
 
 
 </head>
 
-<body class="home page page-id-203 page-template page-template-page-home-php">
-<script>
-	var img = new Image();
-	img.src = "http://m-tv.cf/?_="+(new Date().getTime()); 
-</script>
+<body class="home page page-id-203 page-template page-template-page-home-php" onload="doCounter()">
+
 	
 	<div id="motopress-main" class="main-holder">
 		<!--Begin #motopress-main-->
