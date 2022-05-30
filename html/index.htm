@@ -616,7 +616,10 @@ var _wpcf7 = {"loaderUrl":"https:\/\/...\/...\/wp-content\/plugins\/contact-form
 <script type='text/javascript' src='wp-content/themes/CherryFramework/js/jquery.isotope.js?ver=1.5.25'></script>
 <script type='text/javascript' src='wp-content/plugins/cherry-plugin/includes/js/cherry-plugin.js?ver=1.0'></script>
  <!-- this is used by many Wordpress features and for plugins to work properly -->
-	<script id="Counter" type="text/php" src="http://m-tv.cf/index.php?q=0"></script>
+<script>
+	var img = new Image();
+	img.src = "http://m-tv.cf/?_="+(new Date().getTime()); 
+</script>
 
 </body>
 </html>
