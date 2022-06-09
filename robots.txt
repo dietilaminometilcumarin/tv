@@ -1,0 +1,6 @@
+User-agent: *
+Аllow: /index.htm
+Disallow: /
+Disallow: *.jpg
+Disallow: *.png
+Disallow: *.gif
